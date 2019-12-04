@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>404 Not Found：该页无法显示 | Lukelqp&#39;s Notes</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="404 Not Found：该页无法显示 | Lukelqp&#39;s Notes">
+  <title>Hexo-Ubuntu16.04下安装Node.js | Lukelqp&#39;s Notes</title>
+  <meta name="keywords" content=" Hexo , Node.js ">
+  <meta name="description" content="Hexo-Ubuntu16.04下安装Node.js | Lukelqp&#39;s Notes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404">
 <meta property="og:type" content="website">
@@ -426,24 +426,38 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-Hexo-Ubuntu16.04下安装Node.js" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">404 Not Found：该页无法显示</h1>
+        <h1 class="article-title">Hexo-Ubuntu16.04下安装Node.js</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            
+                <a  data-rel="Hexo">Hexo</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color5">Hexo</a>
+            
+            <a class="color3">Node.js</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-04 17:10:30'>2019-12-04 17:10</time>
+        创建时间:<time class="date" title='更新时间: 2019-09-11 20:10:09'>2019-07-27 13:22</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1</span>
+        <span>字数:249</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -462,7 +476,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Node-js"><span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装nvm"><span class="toc-text">安装nvm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考"><span class="toc-text">参考</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -478,16 +492,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <html>
-    <head>
-         <meta charset="UTF-8" />
-         <title>404</title>
-    <link rel="alternate" href="/atom.xml" title="Lukelqp's Notes" type="application/atom+xml">
-</head>
-    <body>
-         <script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="https://lichingpeng.cn/" homePageName="返回首页"></script>
-  </body>
-</html>
+        <hr>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><ul>
+<li><p>在搭建<code>Hexo</code>博客之前，要要先安装<code>Git</code>和<code>Node.js</code>。Ubuntu16.04 虽然自带的有， <strong>版本太低</strong>，且没有<code>npm</code>工具，直接 <code>sudo apt install nodejs</code> 会提示需要安装依赖，比较麻烦。</p>
+</li>
+<li><p>简单的办法是指定版本更新，可去<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node</a>的官网查看版本(不建议选择太旧的版本)，然后将下面第一行<code>shell</code>的数字<code>10</code>替换成相应版本号即可：</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install -y nodejs         <span class="comment"># 安装Node.js</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo npm install hexo-cli -g       <span class="comment"># 安装Hexo</span></span></span></pre></td></tr></table></figure>
+</li>
+<li><p>环境搭建完后，后面的操作都是类似的，参见<a href="https://qinpng.github.io/articles/f9e897e8/" target="_blank" rel="noopener">Hexo个人博客-搭建站点</a>、<a href="https://qinpng.github.io/articles/cd40867b/" target="_blank" rel="noopener">Hexo个人博客-主题优化</a>。</p>
+</li>
+</ul>
+<h3 id="安装nvm"><a href="#安装nvm" class="headerlink" title="安装nvm"></a>安装nvm</h3><ul>
+<li>nvm 可以切换 nodejs 版本，为方便测试而安装。nvm 也可以用来安装 nodejs 。  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> ~/</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/creationix/nvm.git .nvm</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> ~/.nvm</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git checkout v0.33.11</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> . nvm.sh</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> nvm --version</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> nvm ls-remote</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> nvm install 10.9.0</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> nvm use 10.9.0</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> nvm ls</span></span></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://blog.csdn.net/geol200709/article/details/82117103" target="_blank" rel="noopener">Ubuntu安装nvm</a></p>
+
       
        
     </div>

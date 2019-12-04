@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>404 Not Found：该页无法显示 | Lukelqp&#39;s Notes</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="404 Not Found：该页无法显示 | Lukelqp&#39;s Notes">
+  <title>Hexo-无法安装博客管理工具 | Lukelqp&#39;s Notes</title>
+  <meta name="keywords" content=" Hexo ">
+  <meta name="description" content="Hexo-无法安装博客管理工具 | Lukelqp&#39;s Notes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404">
 <meta property="og:type" content="website">
@@ -426,24 +426,36 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-Hexo-无法安装博客管理工具" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">404 Not Found：该页无法显示</h1>
+        <h1 class="article-title">Hexo-无法安装博客管理工具</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            
+                <a  data-rel="Hexo">Hexo</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color5">Hexo</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-04 17:10:30'>2019-12-04 17:10</time>
+        创建时间:<time class="date" title='更新时间: 2019-09-11 20:07:03'>2019-07-27 13:52</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1</span>
+        <span>字数:220</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -462,7 +474,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#用npm无法安装工具"><span class="toc-text">用npm无法安装工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装了hexo-admin后，总是提示"><span class="toc-text">安装了hexo-admin后，总是提示</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -478,16 +490,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <html>
-    <head>
-         <meta charset="UTF-8" />
-         <title>404</title>
-    <link rel="alternate" href="/atom.xml" title="Lukelqp's Notes" type="application/atom+xml">
-</head>
-    <body>
-         <script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="https://lichingpeng.cn/" homePageName="返回首页"></script>
-  </body>
-</html>
+        <hr>
+<h3 id="用npm无法安装工具"><a href="#用npm无法安装工具" class="headerlink" title="用npm无法安装工具"></a>用npm无法安装工具</h3><ul>
+<li>关于博客的搭建请移步<a href="https://qinpng.github.io/articles/f9e897e8/" target="_blank" rel="noopener">Hexo个人博客-搭建站点</a>，关于NexT主题的优化请移步<a href="https://qinpng.github.io/articles/cd40867b/" target="_blank" rel="noopener">Hexo个人博客-主题优化(一)</a> 和<a href="https://qinpng.github.io/articles/3b3d6da0/" target="_blank" rel="noopener">Hexo个人博客-主题优化(二)</a>。用<code>npm</code>安装部署或其他管理博客的工具时，会出现如下提示：  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">... found 4 vulnerabilities (2 low, 2 high) run `npm audit fix` to fix them, or `npm audit` for details</span></pre></td></tr></table></figure></li>
+<li>用<code>npm audit fix</code>和<code>npm audit</code>试过，发现没有用。推测是因为软件源在国外，网速不稳定导致超时，改成淘宝镜像：  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g cnpm --registry=https://registry.npm.taobao.org</span></span></pre></td></tr></table></figure></li>
+<li>然后用安装时<code>cnpm install</code>代替<code>npm install</code>，亲测可用。</li>
+</ul>
+<h3 id="安装了hexo-admin后，总是提示"><a href="#安装了hexo-admin后，总是提示" class="headerlink" title="安装了hexo-admin后，总是提示"></a>安装了hexo-admin后，总是提示</h3><ul>
+<li>安装了hexo-admin后，发现并不好用，并且总是提示：  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">... (node:29216) [DEP0061] DeprecationWarning: fs.SyncWriteStream is deprecated.</span></pre></td></tr></table></figure></li>
+<li>卸载就完事了，此处尬笑~ :sweat_smile:  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> cnpm uninstall hexo-admin</span></span></pre></td></tr></table></figure>
+
+</li>
+</ul>
+
       
        
     </div>
