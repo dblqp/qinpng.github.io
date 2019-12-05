@@ -74,7 +74,7 @@
     <cover class='cover post half'>
       
         
-  <h1 class='title'>Luke</h1>
+  <h1 class='title'>Luke's Blog</h1>
 
 
   <div class="m_search">
@@ -104,7 +104,7 @@
             
             
             id="gallery">
-            <i class='fas fa-compact-disc fa-fw'></i>&nbsp;画廊
+            <i class='fas fa-video fa-fw'></i>&nbsp;相簿
           </a>
         </li>
       
@@ -126,7 +126,7 @@
             
             
             id="guestbook">
-            <i class='fas fa-folder-open fa-fw'></i>&nbsp;留言
+            <i class='fas fa-book fa-fw'></i>&nbsp;留言
           </a>
         </li>
       
@@ -436,7 +436,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Node-js/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Node.js</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Node-js/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Node.js</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Hexo</p></a></div>
 
 
         
@@ -601,10 +601,6 @@
             
               <section class='widget author'>
   <div class='content pure'>
-    
-      <div class='avatar'>
-        <img class='avatar' src='https://i.loli.net/2019/12/05/oc1mvWynhdibqU2.jpg'/>
-      </div>
     
     
       <div class='text'>
@@ -792,9 +788,9 @@
           
           id="guestbook">
           
-            <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
           
-          留言
+          给我留言
         </a></li>
       
         <li><a class="flat-box" title="/gallery/" href="/gallery/"
@@ -804,9 +800,9 @@
           
           id="gallery">
           
-            <i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>
+            <i class="fas fa-video fa-fw" aria-hidden="true"></i>
           
-          画廊
+          我的相簿
         </a></li>
       
         <li><a class="flat-box" title="/friends/" href="/friends/"
@@ -1104,6 +1100,12 @@
 
 <footer id="footer" class="clearfix">
   
+    <div class="footer">
+      <p>In doing we learn<br>种一颗树最好的时机是十年前，其次是现在</p>
+
+    </div>
+    <br>
+  
   
     <div class="social-wrapper">
       
@@ -1142,13 +1144,13 @@
     </div>
   
   <br>
+  <p>&copy; 2019 李庆鹏</p>
   <div>
     
       总访问量为
       <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
       次
     
-    。
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -1253,7 +1255,7 @@
     return GUEST_INFO.indexOf(item) > -1
   });
   var notify = 'true' == true;
-  var verify = 'true' == true;
+  var verify = 'false' == true;
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
