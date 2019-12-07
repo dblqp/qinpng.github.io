@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>最简单的三阶魔方公式 | Lukelqp&#39;s Notes</title>
+  <title>区块链原理及比特币的应用 | Lukelqp&#39;s Notes</title>
   
-  <meta name="keywords" content="李庆鹏, Hexo, luke, Luke, lichingpeng, liqingpeng">
+  <meta name="keywords" content="区块链, 比特币, 李庆鹏, Hexo, luke, Luke, lichingpeng, liqingpeng">
   
   
-  <meta name="description" content="这是用最少的公式来解决三阶魔方的方法，只是单纯的公式，解说余额不足。, In doing we learn">
+  <meta name="description" content="可能是最完美的区块链与比特币的知识讲解, In doing we learn">
   
 
   
@@ -311,8 +311,8 @@
         
   
     <h1 class="title">
-      <a href="/articles/fa8955ca/">
-        最简单的三阶魔方公式
+      <a href="/articles/781f6a3d/">
+        区块链原理及比特币的应用
       </a>
     </h1>
   
@@ -343,7 +343,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-08-07</p>
+    <p>2019-12-06</p>
   </a>
 </div>
 
@@ -353,9 +353,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E9%AD%94%E6%96%B9/' rel="nofollow">
+    <a href='/categories/%E7%AC%94%E8%AE%B0/%E7%A7%91%E6%99%AE%E7%AC%94%E8%AE%B0/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>魔方</p>
+      <p>笔记&nbsp;/&nbsp;科普笔记</p>
     </a>
   </div>
 
@@ -397,24 +397,143 @@
       <div class="article-entry" itemprop="articleBody">
         <hr>
 <blockquote>
-<p>这是用最少的公式来解决三阶魔方的方法，只是单纯的公式，解说余额不足。</p>
+<p>可能是最完美的区块链与比特币的知识讲解</p>
 </blockquote>
 <hr>
-<h4 id="第一层"><a href="#第一层" class="headerlink" title="第一层"></a>第一层</h4><p>第一层比较好做，基本不需要公式。</p>
-<ul>
-<li>R U R‘ U’ 连做三次</li>
-</ul>
-<h4 id="第二层"><a href="#第二层" class="headerlink" title="第二层"></a>第二层</h4><p>第二层棱边归位：</p>
-<ul>
-<li>放右边：R U R U R U’ R’ U’ R’</li>
-<li>放左边：R’ U’ R’ U’ R’ U R U R</li>
-</ul>
-<h4 id="第三层"><a href="#第三层" class="headerlink" title="第三层"></a>第三层</h4><ul>
-<li>找十字：F R U R’ U‘ F’</li>
-<li>第三层上面归位，小鱼公式：R U R‘ U R U2 R’ </li>
-<li>第三层顶脚归位，眼睛面放左侧，如没有，任选一面：R U R‘ U’ R‘ F R2 U’ R‘ U’ R U R‘ F’</li>
-<li>第三层棱归位，将已完全归位的面放背面，正面对这眼睛：R U‘ R U R U R U’ R‘ U’ R2</li>
-</ul>
+<h2 id="初识特点"><a href="#初识特点" class="headerlink" title="初识特点"></a>初识特点</h2><blockquote>
+<p>区块链是比特币应用的底层技术，比特币是区块链的一种应用。</p>
+</blockquote>
+<p>比特币最开始只是类似游戏币的东西，比特币历史上第一笔交易：1万个比特币换两个披萨。从此，比特币被赋予了一定的价值。</p>
+<blockquote>
+<p>比特币是一种商品。</p>
+</blockquote>
+<p>中本聪自称区块链可以解决银行的信任危机。每个人的货币存放在自己的账户中，而不是银行。所有的交易信息人手一份，比特币客户端上有所有的交易记录。对于黑客来说，就需要篡改所有人的交易信息，这基本是做不到的，所以是可以防止做假账的可能。<strong>分布式记账，去中心化</strong>。</p>
+<p>大概到2140年就没有了，总量是2100万个，产量固定。2009年初，比特币上线了。</p>
+<p>匿名性好，被用来洗钱。</p>
+<h2 id="账号和密码"><a href="#账号和密码" class="headerlink" title="账号和密码"></a>账号和密码</h2><blockquote>
+<p>通过私钥生成公钥，再通过公钥生成地址，但是这个过程是不可逆的。</p>
+</blockquote>
+<p>首先，系统随机生成256位二进制数，形成私钥。</p>
+<p>在私钥的的基础上，通过$ECDSA$椭圆曲线数字签名算法得到公钥。</p>
+<blockquote>
+<p>椭圆曲线方程：$y^2=x^3+ax+b$, 且 $-16(4a^3+27b^2) \neq 0$。</p>
+</blockquote>
+<p>随机在这个方程上取一点$(x,y)$，将私钥$k$分别乘以$x, y$</p>
+<blockquote>
+<p>这里的乘不是普通意义上的乘法，而是群乘法：两点的连线（或一点的切线，如果是相同的数相加的话）与椭圆曲线的交点的对称点，定义为结果。</p>
+</blockquote>
+<p>将得到$kx$和$ky$拼接在一起（<strong>不是加法</strong>），就得到了公钥。</p>
+<p>公钥其实是一个点，而这个点的来源是无法得知的。所以就无法由公钥得出私钥。(<strong>单项函数，不可逆</strong>)</p>
+<p>但是椭圆曲线上有无数个点，如果选择一个简单的点，那么得出的公钥就不太理想。所以要对这个点提出一点要求，不能太简单。</p>
+<blockquote>
+<p>要求：把这条椭圆曲线定义在某个质数阶的有限域上，即从连续的点变为离散的点。比特币使用的是$secp256k1$标准，规定椭圆曲线为：$y^2=x^3 + 7$，以及大质数$P$和基准点$G$点。</p>
+</blockquote>
+<h2 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h2><p>私钥$K$：随机。</p>
+<p>公钥$P=K*G$，$G$是公开的信息。</p>
+<blockquote>
+<p>两大特点：单项函数，即使$P$值已知，也很难求$K$；给定$K$值，很好验证。</p>
+</blockquote>
+<h3 id="数据加密"><a href="#数据加密" class="headerlink" title="数据加密"></a>数据加密</h3><blockquote>
+<p><em>Alice</em>，有私钥$K_a$，公钥$P_a$。$K_a·P_b=K_a·(K_b·G) = key$</p>
+</blockquote>
+<blockquote>
+<p><em>Bob</em>，有私钥$K_b$，公钥$P_b$。$K_b·P_a= K_b·(K_a·G) = key$</p>
+</blockquote>
+<p>由于群乘法满足交换律，所以上面两式相等。</p>
+<p>$A$加密需要用到$B$的公钥，$B$加密需要用到$A$的公钥，这样双方不管传输什么数据，都和此万能$key$进行可逆运算。</p>
+<h3 id="数字签名"><a href="#数字签名" class="headerlink" title="数字签名"></a>数字签名</h3><blockquote>
+<p>即认可数据，产生共识。</p>
+</blockquote>
+<p>如要对$m$进行签名，$m·K = N$，得到签名数据$N$。</p>
+<p>要验证$m$是否被认可，只需乘以公钥$P$，$m·P = m·G·K = N·G$，其中$G$是常数，这样就可以轻易验证$N$了。</p>
+<h3 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h3><p>由公钥经过两次哈希运算得到。</p>
+<blockquote>
+<p>散列函数<em>hash function</em>，可以给任意长度的数据生成指定长度的字符串。比特币中使用的是第二代哈希函数：$SHA-256$，无论输入什么都会输出256个比特的值。</p>
+</blockquote>
+<p>计算速度快，确定性（只要输入的内容相同，得到的值也该相同），和随机性（只要输入的值稍稍有点不同，输出结果就会有很大差别）。</p>
+<p>好的哈希函数，还要有防碰撞性：</p>
+<blockquote>
+<p>即不存在一个快速有效的办法，可以找到两个不同的输入，却得到相同的哈希值。</p>
+</blockquote>
+<p>单向性：</p>
+<blockquote>
+<p>即从输入到输出，但过程不可逆。</p>
+</blockquote>
+<p>运行两次哈希运算，得到结果，然后使用$BASE-58$进行编码。</p>
+<p>最终得到的格式是 $WIF$ (<em>Wallet import format</em>)，即钱包导入格式。</p>
+<h2 id="共识机制"><a href="#共识机制" class="headerlink" title="共识机制"></a>共识机制</h2><blockquote>
+<p>数字签名：主要是为了证明交易信息和防止篡改信息。签名函数$sign()$，验证函数$verify()$</p>
+</blockquote>
+<p><em>Alice</em>将消息的签名$m$发给<em>Bob</em>，为防止篡改，<em>Alice</em>需要将$m$的哈希值和私钥$K_a$带入$sign()$函数，然后将其同签名$m$和公钥$P_a$一同发给<em>Bob</em>。<em>Bob</em>直接用 $varify()$ 函数进行验证，系统自动返回布尔值。</p>
+<p>当且仅当<strong>签名的所有者和公钥的所有者是同一个私钥</strong>，且<strong>这个签名是对消息$m$的签名，没有经过篡改</strong>时，才会返回$True$。</p>
+<blockquote>
+<p>$sign()$函数生成的是$(r，s)$的二元数组。</p>
+</blockquote>
+<p>首先，$sign()$函数会生成生成随机公钥$P$和私钥$K$，$P=K·G$；</p>
+<p>然后，取公钥$P$的$x$坐标记$r=X_p$，得到：$s=k^{-1}(hash(m)+K_a·r)$。</p>
+<p>$verify()$函数，首先计算$\alpha$使：$\alpha=s^{-1}hash(m)$；</p>
+<p>然后计算$\beta=s^{-1}r$；</p>
+<p>然后计算$\alpha·G+\beta·P_a = s^{-1}(hash(m)+r·K_a)·G=K·G=P$，即验证此式是否等于随机生成的公钥P。</p>
+<blockquote>
+<p><em>p2p(peer to peer)</em>，即下载数据不是从中心服务器上，而是从附近节点上下载。</p>
+</blockquote>
+<p>中本聪的论文名称为<em>A Peer-to-Peer Electronic Cash System</em>，一种点对点的电子交易系统。</p>
+<blockquote>
+<p>防篡改：虽然还是只要一份账本，但在所有人随着p2p同步更新之后，账本就被复制成人手一份。即使你可以修改自己的账本，但随着更新，它将有和大多数的账本同步一致。</p>
+</blockquote>
+<p>如Alice想要给Bob转账，经签名之后的消息会想全网广播出去，所有的节点都会参与到这个验证的工作中，一旦签名有问题或者余额不足，那么第一个收到这个请求的节点会自动把这个消息退回给Alice，不会继续再传播。</p>
+<blockquote>
+<p>不能达成共识，账本由谁来记？凭什么是你来记？账本记成什么样的？为什么非要记成这个样子？</p>
+</blockquote>
+<p>理论层面，计算机领域的<em>FLP</em>定理：对于一个分布式系统而言，不存在可以达成共识的确定性算法的。</p>
+<p>有两种方法：</p>
+<p><em>PoS(Proof of Stake)</em>权益证明：投票选举几个有威望的节点，或者股东节点，让他们记账，大家认可。</p>
+<p><em>PoW(Proof of Work)</em>工作量证明：以算力来选举记账人。我们称之为<strong>挖矿</strong>。</p>
+<h2 id="区块链"><a href="#区块链" class="headerlink" title="区块链"></a>区块链</h2><p>涉及：密码学、分布式存储、<em>p2p</em>传输、哈希链表、共识机制、博弈论知识。</p>
+<h4 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h4><blockquote>
+<p>将大账本分成若干个小账本，每个小账本只选择一个人来记账，每个小账本叫做一个区块，把这些区块连起来就叫做<strong>区块链</strong>。（这就是个链表啊）</p>
+</blockquote>
+<p>每个区块细分成两部分：<em>head<em>，</em>body</em></p>
+<p><em>body</em>里存放交易信息。<em>head</em>里放置着必要信息：版本号；上一个区块头的哈希值；时间戳；<em>Merkle root</em>哈希值；当前难度；随机数<em>Nonce</em>。</p>
+<blockquote>
+<p>把上面这些数据连起来，进行两次$SHA-256$嵌套运算，得到的结果就是当前区块表头的哈希值，这个数据将会放在下一个区块的表头。</p>
+</blockquote>
+<p>好处：防篡改性，只要账本中有一点变化，哈希值就会不匹配。</p>
+<blockquote>
+<p><em>Merkle tree</em>：假设<em>body</em>里共有8个交易信息，那么把每一个交易都用$SHA-256$函数嵌套两次，得到8个哈希值。然后把1和2的哈希值合起来，用$SHA-256$函数嵌套两次；3和4合起来，嵌套两次…….，就会得到4个哈希值，重复上一步的操作，就会得到一个<em>Merkle tree</em>。</p>
+</blockquote>
+<p>位于<em>Merkle tree</em>最顶端的就是<em>Merkle root</em>，这样表中任何一个信息的改变都会导致<em>Merkle root</em>的值发生改变，而<em>Merkle root</em>又是写在区块头里的，所以就会影响整个区块表头的哈希值。</p>
+<p>这样，就将区块<em>head</em>和区块<em>body</em>连接在一起了。</p>
+<h4 id="难度和随机数"><a href="#难度和随机数" class="headerlink" title="难度和随机数"></a>难度和随机数</h4><blockquote>
+<p>比特币是以算力来选举记账人的。</p>
+</blockquote>
+<p>区块表中除了随机数<em>Nonce</em>以外，所有其他的数值都是确定的。所以仅可以通过调整随机数来改变最终得到的哈希值。</p>
+<blockquote>
+<p>设定一个<em>Target</em>数，<strong>矿工</strong>的目标就是找到比<em>Target</em>目标小的哈希值，即前几位都为0的数，当然这个数越小，找到的概率就越小，也越耗时间。</p>
+</blockquote>
+<p>将得到哈希值转换成64位16进制数情况下，通过不断调整调整$SHA-256$函数中的变量<em>Nonce</em>，找到第一位为0的概率是$\frac{1}{16}$，前两位都是0的概率是${(\frac{1}{16})}^2$，……</p>
+<p>所谓挖矿，就是不停的改变表头里的<em>Nonce</em>值，直到计算的哈希值小于当前系统约定好的Target值时，则代表该矿工获得了该区块的记账权，如果其他节点验证无误，就可以加入主链，该矿工将获得一定的奖励。</p>
+<p>不存在快捷算法，只能暴力破解。</p>
+<blockquote>
+<p>难度的定义。根据全网的算力，将每个区块打包的时间控制在10分钟左右，即平均10分钟解一道题。</p>
+</blockquote>
+<p>随着设备更新，打包速度会越来越快，因此系统规定，每经过2016个区块，挖矿难度需要根据之前的2016个区块所用的总时长进行相应的调整，直到维持在10分钟左右为止。</p>
+<p>系统规定，最初每打包一个区块，奖励20个比特币，每经过21万个区块的时候，奖励减半。基本上是4年一减半，现在每个区块奖励12.5。而且可以计算的是，比特币的总数在2100万左右，到2140年就没有奖励了。</p>
+<p>当然，应该会有其他形式的获取奖励的方式。</p>
+<blockquote>
+<p>区块交易信息的打包来源于交易池，且打包后的大小不能超过<em>1Mb</em>。</p>
+</blockquote>
+<p>每个人都是从0开始算，而不是几个人一起算一道题。两个矿工选取的交易信息一定是不一样的，因为每个区块的第一笔交易必须是记录发奖的这一笔，即不管能不能抢到区块，首先得记录一笔：例如，系统转给我12.5个比特币。</p>
+<p>每个矿工的地址肯定不一样，<em>Merkle root</em>就会不一样，而且<em>Coinbase</em>中有一个预留字段，可以随便写，所以<strong>每个矿工计算的题明显不是同一道题</strong>，难度也不一样。</p>
+<p>能不能挖到矿也不是完全由算力决定的，算力大只是概率越大。</p>
+<blockquote>
+<p>区块链遵循最长有效链原则，如果同时打包了一个区块，出现了分支链，那么该矿工能不能获得奖励将取决于后面挖矿的人，即取最长的链。被遗弃的链将与前面进行查重，没有被打包的交易将重回交易池。</p>
+</blockquote>
+<p>如果这个人他不想失去奖励，那么他就要沿着这条链一直走下去，对抗全世界，直到把它变成最长链，那么就可以改变历史。</p>
+<p>当然他必须具有很强的算力，理论上来讲，如果你具有全网51%的算力，你就可以这么做，但其实没有必要，因为你沿着最长链可以获得更大的收益。</p>
+<blockquote>
+<p>这样一条越来越长的哈希数据链条就叫做区块链。</p>
+</blockquote>
 
       </div>
       
@@ -427,10 +546,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-06T11:16:36+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-07T09:53:10+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2019年12月6日</p>
+    <p>更新于 2019年12月7日</p>
   </a>
 </div>
 
@@ -439,7 +558,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%AD%94%E6%96%B9/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>魔方</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>魔方公式</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%A7%91%E6%99%AE/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>科普</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>笔记</p></a></div>
 
 
         
@@ -452,7 +571,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://lichingpeng.cn/articles/fa8955ca/&title=最简单的三阶魔方公式 | Lukelqp's Notes&summary="
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://lichingpeng.cn/articles/781f6a3d/&title=区块链原理及比特币的应用 | Lukelqp's Notes&summary="
           
           >
           
@@ -464,7 +583,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://lichingpeng.cn/articles/fa8955ca/&title=最简单的三阶魔方公式 | Lukelqp's Notes&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://lichingpeng.cn/articles/781f6a3d/&title=区块链原理及比特币的应用 | Lukelqp's Notes&summary="
           
           >
           
@@ -474,7 +593,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer noopener" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLklEQVR42u3awY7CMAxFUf7/pztbJKblPjtFqnOzqhAkOV2YxPbrhcfxNt4/+Xw+++Rsts95rn/bGjJkyHgs47gc5DtkYb51vq4MGTJ2Y5wtTJ6vgy/hpbPJkCFDRrp1Ms/Z92XIkCHjDkZ6oEwvwzJkyJDRucSmabga4Pa7uAwZMh7IqF01f/N8S31DhgwZj2Ic4eCBMg2XR2PIkCFjNoMHOHJo40m6tHUDpfBkyJAxlJE2WPBEfy1lxtdCR0MZMmSMYBBMLQTzFFst5Xf6vyFDhoxxDLL1tJDZKQmQFo1/9iZDhozNGLXgmAbNlP3lxcmQIWM04zqwdgIxX5gfLoN7uQwZMsYxViXU0tImD6/XB1MZMmTMZtTaKTpBM+3pQnPKkCFjNKPWxvolfpdSbGTOBQAZMmSMYPAEfbpMp7WCry5Dhox5DFIGqLWI8aTbskusDBkyNmOQSya5gqY88gcQBFwZMmQMYrSmCBNqccsXCcEyZMgYzeAFy87FtVYk4GUDGTJk7MMgz2lTRS0ZV7viypAhYx9GB8MDKDkOksszOrHKkCFjEIM0ftWaKtIwWiswyJAhYyrjCAcvBvAmMH7cRIk2GTJkjGMsiNb4t3z5tAVEhgwZOzB40OThkuPTFrTgTcuQIWMcoxMo0zRZvEXyXyFDhgwZtbLiolTdq+OTIUOGjNuOm/GrkSFDxgaMtUe6dIvpdVeGDBm7MTrJ/U4Bkl+MO2UGGTJkPJzxBzMqqHaERXbDAAAAAElFTkSuQmCC' target="_blank">
+        <a class='qrcode' rel="external nofollow noopener noreferrer noopener" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACIElEQVR42u3a3YqEMAwG0H3/l3ZvFwadL0ld0J5eidSf40AmTfrzE4/jY5ydPxt/558df85fPDAwMB7LqD4+eXAyP6dez8fAwNiHcRbB8ltf3+06Tn7eOX83DAwMjOsAOg+pZ3fAwMDA6DF6Z/IXxcDAwLhmJCGy96LX5yflPAwMjH0YvaXm/xzf0t/AwMB4FOMojrtbm72BgYHxbsa8hVk9nhfgTpeyGBgYGzB6+6zyVkGvOZonrBgYGG9lTMpY81bB/FoMDIx9GKtakr1XTJ775SNiYGBsw0iK8tVwXK3nV2diYGDswOg9IAmO+UaN/G4LWpsYGBiPZVQbA5M5+Yco/wFgYGC8lFEt9yfH1a0YveTvy++AgYHxIkZ1TJK5XiGvt+jFwMDYgXHHUjMP6NUmAQYGxp6MPOHrpYbVYh8GBgZGUhrLN0zkLcZl3xsDA2MDxqr0rrqgLWz8Csp/GBgYOzDyov8Rj+TO+cbW6HNjYGC8lNF7fK+tWA2jhdQTAwNjG0YSFntBOb+qDMDAwNiAMUkQ86VvvhWsV0PDwMB4K+MojvyqvNyW86IaIQYGxusYkzbndQgudySKQb/Z+MTAwHgsY1WQTa6dp5KnHw4DA2MDRhL4egvOtWnflzwXAwMD47Zi3IIcFgMDAyNuSeYtz5x3+/8GBgbGQxjVhWi1VJdvp8i3oI3W4hgYGI9iTF5lHprzTG9BUxMDA+N5jF9urYSaPOV4qwAAAABJRU5ErkJggg==' target="_blank">
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
         
@@ -484,7 +603,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=http://lichingpeng.cn/articles/fa8955ca/&title=最简单的三阶魔方公式 | Lukelqp's Notes&summary="
+          href="http://service.weibo.com/share/share.php?url=http://lichingpeng.cn/articles/781f6a3d/&title=区块链原理及比特币的应用 | Lukelqp's Notes&summary="
           
           >
           
@@ -508,40 +627,21 @@
       
           <div class="prev-next">
               
-                  <section class="prev">
-                      <span class="art-item-left">
-                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
-                          <h4>
-                              <a href="/articles/d98164a9/" rel="prev" title="基本无害的声乐原理">
-                                
-                                    基本无害的声乐原理
-                                
-                              </a>
-                          </h4>
-                          
-                              
-                              <h6 class="tags">
-                                  <a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 笔记</a> <a class="tag" href="/tags/%E9%9F%B3%E4%B9%90/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 音乐</a>
-                              </h6>
-                          
-                      </span>
-                  </section>
-              
               
                   <section class="next">
                       <span class="art-item-right" aria-hidden="true">
                           <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
-                              <a href="/articles/6e81cac4/" rel="prev" title="核电站原理及切尔诺贝利核电站事故的原因">
+                              <a href="/articles/5fd9edd8/" rel="prev" title="稻盛和夫《干法》">
                                   
-                                      核电站原理及切尔诺贝利核电站事故的原因
+                                      稻盛和夫《干法》
                                   
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
-                                  <a class="tag" href="/tags/%E7%A7%91%E6%99%AE/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 科普</a> <a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 笔记</a>
+                                  <a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 笔记</a> <a class="tag" href="/tags/%E8%AF%BB%E4%B9%A6/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 读书</a>
                               </h6>
                           
                       </span>
@@ -581,11 +681,49 @@
 
 <!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
 
+  <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX","TeX"],
+      linebreaks: { automatic:true },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+      Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+  });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += (all[i].SourceElement().parentNode.className ? ' ' : '') + 'has-jax';
+    }
+  });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
 
 
   <script>
     window.subData = {
-      title: '最简单的三阶魔方公式',
+      title: '区块链原理及比特币的应用',
       tools: true
     }
   </script>
@@ -718,7 +856,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一层"><span class="toc-text">第一层</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第二层"><span class="toc-text">第二层</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第三层"><span class="toc-text">第三层</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#初识特点"><span class="toc-text">初识特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#账号和密码"><span class="toc-text">账号和密码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#非对称加密"><span class="toc-text">非对称加密</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据加密"><span class="toc-text">数据加密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数字签名"><span class="toc-text">数字签名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#地址"><span class="toc-text">地址</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#共识机制"><span class="toc-text">共识机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#区块链"><span class="toc-text">区块链</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#链表"><span class="toc-text">链表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#难度和随机数"><span class="toc-text">难度和随机数</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
