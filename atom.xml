@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lichingpeng.cn/"/>
-  <updated>2019-12-07T02:07:40.388Z</updated>
+  <updated>2019-12-07T11:17:50.704Z</updated>
   <id>http://lichingpeng.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>10.19-12.7</title>
+    <link href="http://lichingpeng.cn/articles/f1da4b48/"/>
+    <id>http://lichingpeng.cn/articles/f1da4b48/</id>
+    <published>2019-12-06T16:00:00.000Z</published>
+    <updated>2019-12-07T11:17:50.704Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id="12-7"><a href="#12-7" class="headerlink" title="12.7"></a>12.7</h1><p>前一段时间，有反应网站无法访问，这几天集中看了一下，发现<em>coding</em>给的<em>HTTPS</em>认证过期了，微信内访问的话，不是<em>HTTPS</em>访问就会被列为不受信任名单。重新申请了一下，现在可以正常访问了，不过一次认证的期限是3个月，所以下次过期的时候还是要手动申请的。</p><p>之前我的博客用的是<em>NexT</em>主题，功能非常全，而且作者也在持续更新。但不知道为什么，可能是有点性冷淡，让人看起来没有继续浏览的意愿。这次做了一下改版，试了多个主题，最终选择了<em>Material-X</em>，简洁大方，鲜明，高效。并且还添加了每日诗词的<em>API</em>，有点文艺范了。</p><p>之前一直在准备考的雅思，现在也搁置了，总感觉一直没有进入状态—就是那种沉浸的状态（可以查看我的上一篇博客，<a href="https://lichingpeng.cn/articles/5fd9edd8">稻盛和夫《干法》</a>，有对这种状态的介绍）。这个月底论文也要开题了，要忙起来了。</p><p>腿部肌肉的状况现在有点好转，暂时没有什么大碍。不过每次跑步之后，两条腿的感觉还是不一样的，右小腿明显有一种疲劳感，看来只能靠它慢慢恢复了。照理说，我不应该跑步的，我也想过等完全好了之后再跑，但是几天不跑总感觉缺了点什么，看书也看不进去。比如现在，我刚跑完，写这篇日记的时候我状态很好，很兴奋。</p><p>之前还可以靠在健身房撸铁找点感觉，但健身卡过期了，而且离学校比较远，就不想续了。感觉我的状态全靠跑步来维持，希望早日恢复，让我可以剧烈跑一回。</p><p>双11在拼多多上买了一款<em>ThinkPad X1 Carbon 2019</em>，还算便宜。买之前我也知道很多人说拼多多上假货多，但是凭着对电脑的了解，电脑验证是否正品的途径太多，更何况<em>ThinkPad</em>这种大品牌。不过不了解的商品不建议在拼多多上购买，毕竟要求稳。</p><p>我知道很多人喜欢<em>Mac</em>，最开始我也是很喜欢，外观简约时尚，很有质感，后来用过几次才哥的<em>Pro</em>，感觉键盘太硬，更何况<em>Linux</em>玩的久了，便觉得<em>Mac</em>系统没什么了。现在我更喜欢<em>Windows</em>的扩展功能，并且<em>ThinkPad</em>的键盘手感太好了，在实体店体验过，爱不释手。续航也很给力，开着省电模式轻度使用10几个小时毫无压力。</p><p>本文结束。。。</p><h1 id="10-19"><a href="#10-19" class="headerlink" title="10.19"></a>10.19</h1><p>时间瞬步，转身就是一个月。</p><blockquote><p>近来感悟：每个人都只能陪你走一段路。</p></blockquote><p>上次跑完半马后，休息了一个星期，中间尝试几次恢复跑（也就是7分的配速），都是短距离，之前被磨的脚掌还是很痛，索性就继续休息了，到国庆节时已经没有什么大碍了。</p><p>7月份的时候，一次打篮球的时候不小心，右腿小腿后部的肌肉出现疼痛，推测是起跳之前没有充分热身，过于用力导致拉伤（撕裂感）。当时没太在意，毕竟休息2天就没事了，后来跑步的时候也没什么影响，但是只要一打篮球，就会疼个两天。可能是这次跑的强度太大，10月2号当我继续10公里路跑的时候，肌肉的疼痛严重影响我的速度，即使降速后还是会有疼痛感。无奈只能延长跑后休息的时间，但效果不好，最终遗憾地选择暂停跑步。国庆假期后，去医院问诊了一下，做了核磁共振，目前在等待结果。距离上次跑步已经过去了11天，非常想念，希望早日恢复。</p><p>17、18号去参加志愿者了。这次是 <strong>国际冬季运动会（北京）博览会</strong> ，地点在国家会议中心。这次比前两次都要累，因为工作在门禁，即协助参会人员扫码入场，一整天都在站着，脚跟、腿都很酸。早上5点起来，坐1个半小时地铁到国家会议中心，大概8点左右到岗，下午5点结束。</p><p>很多高校强制本科生毕业要达到一定的志愿服务时长，这给了一些组织从中谋利的机会，活动主办方一般都会给补贴的，但补贴的大头通常都被负责招募志愿者的组织拿去。这次给的补贴是一天30，而很多的志愿活动甚至没有补贴，只是给了时长和志愿证明。和我们同岗位的两位女生，她们是兼职，不是志愿者，而她们拿的补贴是一天120。大部分情况下，大学生成了免费的劳动力。当然你可以说免费服务是应该被提倡的，因为这是对精神世界的锻炼，不图利正志愿活动之所以高尚的体现。我没有要批判的意思，被“套路”，也是一种成长。</p><p>报名前真没有料到来冬博会的人会这么多，有很多大人物，像某区长，局长，及省长，CEO，董事长之类的；好像还有一些是冬奥会成员。想到这些人每次从我旁边过，都要弯下身，掏出通行证，莫名就有一种阿Q的体验，脑补鞠躬。有些人通过的时候，会说声谢谢，听到最多的是来自老外的<em>Thank you</em>。中国人也有，但和总数一比就只有极小一部分了。</p><p>有一位大老远从天津过来，做志愿者。很爱笑，感觉是认识很久了的样子。哈哈，希望后会有期。</p><p>最近学术上好像没有什么进步，导师让读的论文还没有读，为准备杨老师课上的发表而焦头烂额，最终赶时间还是有点敷衍。越来越担心雅思考试的口语，怕跨不过6分的坎。</p><p>计划：最近一个月全力赴战雅思。考完后恶补论文，准备12月份的开题；找一些赚钱的兼职，2019款ThinkPad我看上好久了。然后期末写一篇DSGE的结课论文，还有国际问题前言的考试。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;h1 id=&quot;12-7&quot;&gt;&lt;a href=&quot;#12-7&quot; class=&quot;headerlink&quot; title=&quot;12.7&quot;&gt;&lt;/a&gt;12.7&lt;/h1&gt;&lt;p&gt;前一段时间，有反应网站无法访问，这几天集中看了一下，发现&lt;em&gt;coding&lt;/em&gt;给的&lt;em&gt;HTTPS&lt;/e
+      
+    
+    </summary>
+    
+    
+      <category term="日志" scheme="http://lichingpeng.cn/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="日志" scheme="http://lichingpeng.cn/tags/%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
   
   <entry>
     <title>区块链原理及比特币的应用</title>
@@ -37,9 +64,9 @@
       <category term="科普笔记" scheme="http://lichingpeng.cn/categories/%E7%AC%94%E8%AE%B0/%E7%A7%91%E6%99%AE%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="科普" scheme="http://lichingpeng.cn/tags/%E7%A7%91%E6%99%AE/"/>
-    
       <category term="笔记" scheme="http://lichingpeng.cn/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="科普" scheme="http://lichingpeng.cn/tags/%E7%A7%91%E6%99%AE/"/>
     
   </entry>
   
@@ -67,35 +94,6 @@
       <category term="笔记" scheme="http://lichingpeng.cn/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="读书" scheme="http://lichingpeng.cn/tags/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>10.19-</title>
-    <link href="http://lichingpeng.cn/articles/f1da4b48/"/>
-    <id>http://lichingpeng.cn/articles/f1da4b48/</id>
-    <published>2019-10-19T07:57:20.000Z</published>
-    <updated>2019-12-06T05:52:56.106Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="10-19"><a href="#10-19" class="headerlink" title="10.19"></a>10.19</h1><p>时间瞬步，转身就是一个月。</p><blockquote><p>近来感悟：每个人都只能陪你走一段路。</p></blockquote><p>上次跑完半马后，休息了一个星期，中间尝试几次恢复跑（也就是7分的配速），都是短距离，之前被磨的脚掌还是很痛，索性就继续休息了，到国庆节时已经没有什么大碍了。</p><p>7月份的时候，一次打篮球的时候不小心，右腿小腿后部的肌肉出现疼痛，推测是起跳之前没有充分热身，过于用力导致拉伤（撕裂感）。当时没太在意，毕竟休息2天就没事了，后来跑步的时候也没什么影响，但是只要一打篮球，就会疼个两天。可能是这次跑的强度太大，10月2号当我继续10公里路跑的时候，肌肉的疼痛严重影响我的速度，即使降速后还是会有疼痛感。无奈只能延长跑后休息的时间，但效果不好，最终遗憾地选择暂停跑步。国庆假期后，去医院问诊了一下，做了核磁共振，目前在等待结果。距离上次跑步已经过去了11天，非常想念，希望早日恢复。</p><p>17、18号去参加志愿者了。这次是 <strong>国际冬季运动会（北京）博览会</strong> ，地点在国家会议中心。这次比前两次都要累，因为工作在门禁，即协助参会人员扫码入场，一整天都在站着，脚跟、腿都很酸。早上5点起来，坐1个半小时地铁到国家会议中心，大概8点左右到岗，下午5点结束。</p><p>很多高校强制本科生毕业要达到一定的志愿服务时长，这给了一些组织从中谋利的机会，活动主办方一般都会给补贴的，但补贴的大头通常都被负责招募志愿者的组织拿去。这次给的补贴是一天30，而很多的志愿活动甚至没有补贴，只是给了时长和志愿证明。和我们同岗位的两位女生，她们是兼职，不是志愿者，而她们拿的补贴是一天120。大部分情况下，大学生成了免费的劳动力。当然你可以说免费服务是应该被提倡的，因为这是对精神世界的锻炼，不图利正志愿活动之所以高尚的体现。我没有要批判的意思，被“套路”，也是一种成长。</p><p>报名前真没有料到来冬博会的人会这么多，有很多大人物，像某区长，局长，及省长，CEO，董事长之类的；好像还有一些是冬奥会成员。想到这些人每次从我旁边过，都要弯下身，掏出通行证，莫名就有一种阿Q的体验，脑补鞠躬。有些人通过的时候，会说声谢谢，听到最多的是来自老外的<em>Thank you</em>。中国人也有，但和总数一比就只有极小一部分了。</p><p>有一位大老远从天津过来，做志愿者。很爱笑，感觉是认识很久了的样子。哈哈，希望后会有期。</p><p>最近学术上好像没有什么进步，导师让读的论文还没有读，为准备杨老师课上的发表而焦头烂额，最终赶时间还是有点敷衍。越来越担心雅思考试的口语，怕跨不过6分的坎。</p><p>计划：最近一个月全力赴战雅思。考完后恶补论文，准备12月份的开题；找一些赚钱的兼职，2019款ThinkPad我看上好久了。然后期末写一篇DSGE的结课论文，还有国际问题前言的考试。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;hr&gt;
-&lt;h1 id=&quot;10-19&quot;&gt;&lt;a href=&quot;#10-19&quot; class=&quot;headerlink&quot; title=&quot;10.19&quot;&gt;&lt;/a&gt;10.19&lt;/h1&gt;&lt;p&gt;时间瞬步，转身就是一个月。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;近来感悟：每个人都只能陪你走一段路。&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="日志" scheme="http://lichingpeng.cn/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-      <category term="日志" scheme="http://lichingpeng.cn/tags/%E6%97%A5%E5%BF%97/"/>
     
   </entry>
   
@@ -174,9 +172,9 @@
       <category term="科普笔记" scheme="http://lichingpeng.cn/categories/%E7%AC%94%E8%AE%B0/%E7%A7%91%E6%99%AE%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="科普" scheme="http://lichingpeng.cn/tags/%E7%A7%91%E6%99%AE/"/>
-    
       <category term="笔记" scheme="http://lichingpeng.cn/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="科普" scheme="http://lichingpeng.cn/tags/%E7%A7%91%E6%99%AE/"/>
     
   </entry>
   
@@ -309,9 +307,9 @@
       <category term="科普笔记" scheme="http://lichingpeng.cn/categories/%E7%AC%94%E8%AE%B0/%E7%A7%91%E6%99%AE%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="科普" scheme="http://lichingpeng.cn/tags/%E7%A7%91%E6%99%AE/"/>
-    
       <category term="笔记" scheme="http://lichingpeng.cn/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="科普" scheme="http://lichingpeng.cn/tags/%E7%A7%91%E6%99%AE/"/>
     
   </entry>
   
