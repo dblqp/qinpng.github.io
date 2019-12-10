@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lichingpeng.cn/"/>
-  <updated>2019-12-10T13:58:15.604Z</updated>
+  <updated>2019-12-10T13:59:52.861Z</updated>
   <id>http://lichingpeng.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://lichingpeng.cn/articles/d58a6c76/"/>
     <id>http://lichingpeng.cn/articles/d58a6c76/</id>
     <published>2019-12-10T13:53:00.000Z</published>
-    <updated>2019-12-10T13:58:15.604Z</updated>
+    <updated>2019-12-10T13:59:52.861Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>笔记本睡眠是一个很好用的功能，可以保证在唤醒系统之后能快速进入系统，又不会耗去太多的电量。但是在使用中，发现ThinkPad在睡眠之后，耗电量没有节省太多。猜测是在睡眠之后被某个程序唤醒了，网上搜罗了一下，以下是解决方法。</p></blockquote><ol><li>首先，用管理员身份打开cmd；</li><li>然后，定位到根目录中，输入以下命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">C:\WINDOWS\system32&gt;powercfg -devicequery wake_programmable</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">HID-compliant mouse</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">符合 HID 标准的用户控制设备</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">HID Keyboard Device</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">符合 HID 标准的系统控制器</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">Intel(R) XMM7360-P WWAN</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">HID-compliant device</span></pre></td></tr></table></figure></li><li>上面列出的是“用户可配置的从某个睡眠状态唤醒系统的设备”。第一个是鼠标，第二个是键盘，第三个是网卡。<br>由于鼠标和键盘一般都不会动，所以推测是因为网卡的自动唤醒。</li><li>继续输入命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">C:\WINDOWS\system32&gt;powercfg -devicequery wake_armed</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">HID-compliant mouse</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">HID Keyboard Device</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">Intel(R) XMM7360-P WWAN</span></pre></td></tr></table></figure></li><li>将无线网卡自动唤醒关闭<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">C:\WINDOWS\system32&gt;powercfg -devicedisablewake &quot;Intel(R) XMM7360-P WWAN&quot;</span></pre></td></tr></table></figure>完毕后测试了一下，将电脑盖子合上之后放一个下午，只损耗了1%的电量，完美解决。当然，坏处就是如果连接的无线网络是需要认证的话，那么进入系统之后就需要再次验证。</li></ol>]]></content>
     
