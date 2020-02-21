@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>博客页面优化(二) | Lukelqp&#39;s Notes</title>
+  
+  <meta name="keywords" content="hexo, NexT, 博客, blog, luke, lichingpeng">
+  
+  
+  <meta name="description" content="域名解析,404,SEO,Google,baidu,https访问,SSL证书,自定义域名, 站点地图, In doing we learn">
+  
+
+  
+  <link rel="alternate" href="/atom.xml" title="Lukelqp's Notes">
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11.26/css/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144846313-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-144846313-1');
+    </script>
+  
+  
+    <!-- ba -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f64e22e35ee22e2e1ddaaa711b15cf1f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+  
+<link rel="alternate" href="/atom.xml" title="Lukelqp's Notes" type="application/atom+xml">
+</head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover post half'>
+      
+        
+  <h1 class='title'>Lukelqp</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;博文
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/gallery/"
+            
+              rel="nofollow"
+            
+            
+            id="gallery">
+            <i class='fas fa-video fa-fw'></i>&nbsp;相簿
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/guestbook/"
+            
+              rel="nofollow"
+            
+            
+            id="guestbook">
+            <i class='fas fa-book fa-fw'></i>&nbsp;留言
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header pure">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="pure"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          Lukelqp's Notes
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-grin fa-fw'></i>&nbsp;最近
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="tags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)' target="_blank" rel="noopener"></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)' target="_blank" rel="noopener"></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)' target="_blank" rel="noopener"></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)' target="_blank" rel="noopener"></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于小站
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/articles/3b3d6da0/">
+        博客页面优化(二)
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="/http:/lichingpeng.cn" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>Lukelqp</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-07-27</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/Hexo/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>Hexo</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <blockquote>
+<p><strong>友情提示</strong>：博客平台的搭建请移步<a href="https://qinpng.gitee.io/articles/f9e897e8/" target="_blank" rel="noopener">博客网站搭建过程</a>，查看7.2版本的变化请移步<a href="https://qinpng.gitee.io/articles/d1176acd/" target="_blank" rel="noopener">NexT主题v5到v7.2比较</a>。</p>
+</blockquote>
+<blockquote>
+<p><strong>注</strong>：文件目录分隔符在Windows下为<code>\</code>，而Linux下为<code>/</code>，本文没有区分。注意区分<strong>站点配置文件</strong>(<code>\myblog\_config.yml</code>)和<strong>主题配置文件</strong>(<code>\myblog\themes\next\_config.yml</code>)。</p>
+</blockquote>
+<blockquote>
+<p>接上篇 <a href="https://qinpng.gitee.io/articles/cd40867b/" target="_blank" rel="noopener">博客页面优化(一)</a> </p>
+</blockquote>
+<hr>
+<h3 id="项目主页添加README"><a href="#项目主页添加README" class="headerlink" title="项目主页添加README"></a>项目主页添加README</h3><ul>
+<li><p>在<code>Github</code>上建立博客仓库的时候，没有生成<code>README</code>文件，这样使得其他人无法知道我们这个仓库是做什么，即我们的这个仓库缺少一个说明文件；但是如果直接使用命令<code>hexo n README</code>，再部署后会被解析为<code>html</code>文件，这不是我们想要的。</p>
+</li>
+<li><p>解决方式是在路径<code>\myblog\source</code>下手动新建<code>README.mdown</code>，注意后缀是<code>.mdown</code></p>
+</li>
+<li><p>然后在这个新建文件中写<code>README</code>即可。部署后它会被复制到<code>public</code>文件夹，而不会被解析成<code>html</code>文件。</p>
+</li>
+</ul>
+<h3 id="添加公益404页面"><a href="#添加公益404页面" class="headerlink" title="添加公益404页面"></a>添加公益404页面</h3><ul>
+<li><p>进入博客根目录下，新建页面 <code>hexo new page 404</code>，完成后打开其中的<code>index.md</code>文件，输入: </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">---</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">title: 404 Not Found：该页无法显示</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">toc: false</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">comments: false</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">permalink: /404</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">---</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">         <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span> /&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">         <span class="tag">&lt;<span class="name">title</span>&gt;</span>404<span class="tag">&lt;/<span class="name">title</span>&gt;</span>                                    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">         <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> <span class="attr">homePageUrl</span>=<span class="string">"https://lichingpeng.cn/"</span> <span class="attr">homePageName</span>=<span class="string">"返回首页"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></pre></td></tr></table></figure></li>
+<li><p>完成后部署即可。效果如下：</p>
+<p><img src="http://ww1.sinaimg.cn/large/9379c277ly1g5e8hwsckgj20tc0hi0yz.jpg" alt="404"></p>
+</li>
+</ul>
+<h3 id="同时部署GitHub、coding、gitee上"><a href="#同时部署GitHub、coding、gitee上" class="headerlink" title="同时部署GitHub、coding、gitee上"></a>同时部署GitHub、coding、gitee上</h3><ul>
+<li><p>GitHub服务器网页加载速度不稳定，比较流行的解决办法就是将静态网页同时部署GitHub、coding、gitee上，再进行域名分流解析。</p>
+</li>
+<li><p>首先需要有GitHub、coding、gitee的账号，建议用同一个邮箱注册，为了方便记忆，用户名尽量一样。关于部署到GitHub上的步骤参见<a href="https://qinpng.gitee.io/articles/f9e897e8/" target="_blank" rel="noopener">博客网站搭建过程</a></p>
+<ul>
+<li>登录coding或gitee，新建项目，步骤与github上一样</li>
+<li>初始化后，设置 coding pages 、gitee pages 二级域名</li>
+</ul>
+</li>
+<li><p>为了避免每次输入密码的麻烦，需要部署公钥。用<code>ssh</code>生成公钥：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh-keygen -t rsa -C <span class="string">"xxxxx@163.com"</span></span></span></pre></td></tr></table></figure></li>
+<li><p>之后输入yes，一直点回车结束。在<code>C:\Users\kinll\.ssh</code>里找到<code>id_rsa.pub</code>文件并打开，复制里面的内容。</p>
+<p><img src="http://ww1.sinaimg.cn/large/9379c277ly1g5e4p74z1sj213j0huq47.jpg" alt="codingpage"></p>
+</li>
+<li><p>到coding和gitee的主页中，新建公钥，并将以上复制的内容粘贴进去，保存退出。</p>
+</li>
+<li><p>在命令行输入检测链接是否建立：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">ssh -T git@git.coding.net    <span class="comment"># 检测连接coding的公钥</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">ssh -T git@gitee.com         <span class="comment"># 检测连接gitee的公钥</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com        <span class="comment"># 检测连接GitHub的公钥</span></span></pre></td></tr></table></figure></li>
+<li><p>成功后，复制项目的<code>ssh</code>地址到站点配置文件<code>/myblog/_config.yml</code>中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">deploy:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  type: git</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  repository: </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    gitee: git@gitee.com:qinpng&#x2F;qinpng.git</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    coding: git@git.dev.tencent.com:kinllay&#x2F;kinllay.coding.me.git</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    github: git@github.com:qinpng&#x2F;qinpng.github.io.git</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  branch: master</span></pre></td></tr></table></figure></li>
+<li><p>执行部署后，分别输入github、coding、gitee的二级域名查看效果。</p>
+</li>
+</ul>
+<h3 id="自定义域名解析到github和coding"><a href="#自定义域名解析到github和coding" class="headerlink" title="自定义域名解析到github和coding"></a>自定义域名解析到github和coding</h3><ul>
+<li><p>完成部署后，就可以将github和coding解析到同一个自定义域名上，并设定线路分流，让国内IP访问coding页面，国外IP访问github页面，能达到提升页面加载速度的效果。</p>
+</li>
+<li><p>首先需要前往<a href="https://wanwang.aliyun.com/" target="_blank" rel="noopener">阿里云</a>、<a href="https://dnspod.cloud.tencent.com/" target="_blank" rel="noopener">腾讯云</a>、<a href="https://sg.godaddy.com/zh" target="_blank" rel="noopener">godaddy</a>等网站购买域名，价格基本不会差太多，如果在国内购买则需要备案。</p>
+</li>
+<li><p>购买后进入<strong>控制台</strong>，<strong>域名管理</strong>界面，点击<strong>域名解析</strong>，如下图腾讯云的界面：</p>
+<p><img src="http://ww1.sinaimg.cn/large/9379c277ly1g5gh6rosf5j213u0dlq3n.jpg" alt="域名管理界面"></p>
+</li>
+<li><p>进入域名解析界面，点击<strong>添加记录</strong></p>
+<ul>
+<li>主机记录选择<strong>@</strong></li>
+<li>由于我是解析到另外的IP上所以选择<strong>CNAME</strong>，如果解析到主机地址那就选择<strong>A</strong>就好</li>
+<li>线路选择coding为默认，github为国外，这样在国内访问就会转到xxx.coding.me，国外访问就相应跳到xxx.github.io</li>
+<li>记录值填写相应的访问地址</li>
+<li>建议解析一下 <code>www</code> 的地址，这样如果访问 <code>www.xxxxx.cn</code> 也会跳转到 <code>xxxx.cn</code> 页面，便于访问。</li>
+<li>其他使用默认设置。如下图：</li>
+</ul>
+<p><img src="http://ww1.sinaimg.cn/large/9379c277ly1g5gh9bn2d7j213v0g975g.jpg" alt="域名解析界面"></p>
+</li>
+<li><p>域名解析需要等待大概10多分钟的时间</p>
+</li>
+<li><p>以上操作做完之后，需要去<code>github pages</code>和<code>coding pages</code>上设置一下自定义域名，如图：</p>
+<p><img src="http://ww1.sinaimg.cn/large/9379c277ly1g5ghxpoj11j20si0hjjs3.jpg" alt="githubpages"></p>
+<p><img src="http://ww1.sinaimg.cn/large/9379c277ly1g5ghzw4221j20vb0gu3zk.jpg" alt="codingpages"></p>
+</li>
+<li><p>建议勾选强制https访问的选项</p>
+</li>
+</ul>
+<h3 id="https访问"><a href="#https访问" class="headerlink" title="https访问"></a>https访问</h3><ul>
+<li><p>域名解析完毕后，登入网址的时候会提示不是私人链接，而且左上角没有小绿锁，而且手机微信打开时可以看到图片是无法加载，这表示网站是不安全的，需要实现https访问。具体操作是：</p>
+<ul>
+<li>在github pages 和 coding pages 界面中勾选强制https访问。</li>
+<li>在coding pages 里点击SSL证书申请，如上图。</li>
+</ul>
+<blockquote>
+<p><strong>注意</strong>： coding pages 上的SSL证书的有效期是3个月，如果提示申请失败，需要去域名解析后台将<strong>国外线路</strong>暂停，大概等个10多分钟后，就可以申请了。</p>
+</blockquote>
+</li>
+<li><p>不过我更建议直接去腾讯云<a href="https://console.cloud.tencent.com/ssl" target="_blank" rel="noopener">SSL证书管理控制台</a> 申请，有效期是一年，而且可以实现全站https访问。具体参考<a href="https://cloud.tencent.com/document/product/400/6813" target="_blank" rel="noopener">官方文档</a></p>
+</li>
+<li><p>在证书管理界面，点击申请免费证书，在弹出的页面填入相应信息，选择自动DNS验证：</p>
+<p><img src="https://ws1.sinaimg.cn/large/9379c277ly1g5gikcvc8oj213m0fujsf.jpg" alt="ssl"></p>
+</li>
+<li><p>耐心等待审核即可。</p>
+</li>
+</ul>
+<h3 id="添加Google、Baidu收录"><a href="#添加Google、Baidu收录" class="headerlink" title="添加Google、Baidu收录"></a>添加Google、Baidu收录</h3><ul>
+<li><p>Github和Coding都有防爬虫处理，我们博客可能就无法被搜索引擎收录，需要手动添加。</p>
+</li>
+<li><p>HTML标签收录: 打开<a href="https://search.google.com/search-console/welcome" target="_blank" rel="noopener"><code>Google Console</code></a>或<a href="https://ziyuan.baidu.com/https/index" target="_blank" rel="noopener"><code>百度站长</code></a>，操作类似，如果没有购买域名，就选择网址前缀审查，找到HTML那一段代码，复制。</p>
+</li>
+<li><p>进入<code>themes/next/layout/_partials/head.swig</code>中替换<code>content</code>部分，并在主题配置文件中修改<code>google_site_verification: true</code>，布置后回到Google的网页点击验证即可。</p>
+<blockquote>
+<p>如果是V7.0或以上版本，直接在主题配置文件 <code>/myblog/themes/next/_config.yml</code> 中添加 <code>google_site_verification</code> 、<code>baidu_site_verification</code> 的值即可。</p>
+</blockquote>
+<blockquote>
+<p>coding pages 如果没有勾选强制https访问，百度不会通过验证，所以还是建议申请自定义域名，获取SSL证书后实现https访问后请求收录。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="谷歌和百度分析"><a href="#谷歌和百度分析" class="headerlink" title="谷歌和百度分析"></a>谷歌和百度分析</h3><ul>
+<li>适用于next v7 版本</li>
+<li><a href="https://analytics.google.com/analytics/web/" target="_blank" rel="noopener">Google analytics</a> 和 <a href="https://tongji.baidu.com/sc-web/" target="_blank" rel="noopener">百度统计</a> 获取那一串ID，即src=”<a href="https://www.googletagmanager.com/gtag/js?id=xxxxxxx&quot;" target="_blank" rel="noopener">https://www.googletagmanager.com/gtag/js?id=xxxxxxx&quot;</a> 中id后面的部分</li>
+<li>百度没有id标识，src = “<a href="https://hm.baidu.com/hm.js?xxxxxxxxxx&quot;" target="_blank" rel="noopener">https://hm.baidu.com/hm.js?xxxxxxxxxx&quot;</a> 取？后面那一段即可</li>
+<li>在主题配置文件中，找到google_analytics和baidu_analytics，填入相应的id</li>
+<li>部署，即可看到结果。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"https://www.googletagmanager.com/gtag/js?id=UA-xxxxxxxxx-x"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">window</span>.dataLayer = <span class="built_in">window</span>.dataLayer || [];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">gtag</span>(<span class="params"></span>)</span>&#123;dataLayer.push(<span class="built_in">arguments</span>);&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  gtag(<span class="string">'js'</span>, <span class="keyword">new</span> <span class="built_in">Date</span>());</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  gtag(<span class="string">'config'</span>, <span class="string">'xxxxxxxxx-x'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&lt;<span class="regexp">/script&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="regexp"></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"><span class="regexp">&lt;script&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"><span class="regexp">var _hmt = _hmt || [];</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="regexp">(function() &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"><span class="regexp">  var hm = document.createElement("script");</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"><span class="regexp">  hm.src = "https:/</span><span class="regexp">/hm.baidu.com/</span>hm.js?xxxxxxxxxxxxxxxxxx<span class="string">";</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line"><span class="string">  var s = document.getElementsByTagName("</span>script<span class="string">")[0]; </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"><span class="string">  s.parentNode.insertBefore(hm, s);</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line"><span class="string">&#125;)();</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;/script&gt;</span></span></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="设置SEO优化"><a href="#设置SEO优化" class="headerlink" title="设置SEO优化"></a>设置SEO优化</h3><ul>
+<li><p>seo优化有利于搜索引擎对网站的索引，根据关键字提高网站的排名，提高曝光率。将首页改为<strong>网站名称-网站描述</strong>这样的显示方式。</p>
+</li>
+<li><p>在<code>myblog/themes/next/_config.yml</code>中修改<code>SEO: true</code>，然后在<code>myblog/scaffolds/post.md</code>文件中添加关键字和描述，如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">title: &#123;&#123; title &#125;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">date: &#123;&#123; date &#125;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">tags:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">keywords:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">description: </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">---</span></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="提交站点地图"><a href="#提交站点地图" class="headerlink" title="提交站点地图"></a>提交站点地图</h3><ul>
+<li><p>安装百度和Google的站点地图生成插件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span></pre></td></tr></table></figure></li>
+<li><p>修改站点配置文件_config.yml，添加以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"># 自动生成sitemap</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">sitemap:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  path: sitemap.xml</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">baidusitemap:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  path: baidusitemap.xml</span></pre></td></tr></table></figure></li>
+<li><p>执行生成和部署命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo g</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hexo d</span></pre></td></tr></table></figure></li>
+<li><p>此时，进入<code>public</code>目录，你会发现里面有<code>sitemap.xml</code>和<code>baidusitemap.xml</code>两个文件，这就是生成的站点地图。里面包含了网站上所有页面的链接，搜索引擎通过这两个文件来抓取网站页面。</p>
+</li>
+<li><p>前往<a href="http://zhanzhang.baidu.com/" target="_blank" rel="noopener">百度站长</a>提交站点地图：<br><img src="https://ws1.sinaimg.cn/large/9379c277ly1g5gve0bln5j20o50ge3z8.jpg" alt="baidusitemap"></p>
+</li>
+<li><p>输入框里填写<code>https://lichingpeng.cn/baidusitemap.xml</code>，输入验证码后选择提交。</p>
+</li>
+<li><p>安装自动推送JS代码的网页，在页面被访问时，页面URL将立即被推送给百度。修改主题目录下的<code>/next/layout/post.swig</code>文件，末尾添加自动推送代码，代码如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> bp = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> curProtocol = <span class="built_in">window</span>.location.protocol.split(<span class="string">':'</span>)[<span class="number">0</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">if</span> (curProtocol === <span class="string">'https'</span>) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">        bp.src = <span class="string">'https://zz.bdstatic.com/linksubmit/push.js'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">else</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        bp.src = <span class="string">'http://push.zhanzhang.baidu.com/push.js'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"script"</span>)[<span class="number">0</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">    s.parentNode.insertBefore(bp, s);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#125;)();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&lt;<span class="regexp">/script&gt;</span></span></pre></td></tr></table></figure></li>
+<li><p><a href="https://www.google.com/webmasters/#?modal_active=none" target="_blank" rel="noopener">Google console</a> 提交站点地图的步骤与之类似，输入站点地图地址<code>https://lichingpeng.cn/sitemap.xml</code>，点提交即可。<br><img src="https://ws1.sinaimg.cn/large/9379c277ly1g5gvlmww09j20w70btt93.jpg" alt="Googlesitemap"></p>
+</li>
+</ul>
+<hr>
+<p>至此，所有工作做完。</p>
+<h3 id="本文参考"><a href="#本文参考" class="headerlink" title="本文参考"></a>本文参考</h3><p><a href="https://www.jianshu.com/p/d21a7ca5b9fb?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation" target="_blank" rel="noopener">Github&amp;Coding双管齐下部署Hexo</a><br><a href="https://albenw.github.io/posts/3460d887/" target="_blank" rel="noopener">Alben’s home hexo优化</a><br><a href="http://fengdi.org/2017/08/10/Hexo%E5%8D%9A%E5%AE%A2%E6%8F%90%E4%BA%A4%E7%99%BE%E5%BA%A6%E5%92%8CGoogle%E6%94%B6%E5%BD%95.html" target="_blank" rel="noopener">Hexo博客提交百度和Google收录</a></p>
+<h3 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h3><ul>
+<li><a href="https://qinpng.gitee.io/articles/f9e897e8/" target="_blank" rel="noopener">博客网站搭建过程</a></li>
+<li><a href="https://qinpng.gitee.io/articles/cd40867b/" target="_blank" rel="noopener">博客页面优化(一)</a> </li>
+<li><a href="https://qinpng.gitee.io/articles/41d4da8c/" target="_blank" rel="noopener">Linux上安装Node.js</a></li>
+<li><a href="https://qinpng.gitee.io/articles/a55ea93c/" target="_blank" rel="noopener">关于包管理工具npm下载速度慢的问题</a></li>
+<li><a href="https://qinpng.gitee.io/articles/d1176acd/" target="_blank" rel="noopener">NexT主题v5到v7.2比较</a></li>
+</ul>
+
+      </div>
+      
+      
+        <br>
+        
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-21T14:56:45+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>更新于 2020年2月21日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/NexT/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>NexT</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://lichingpeng.cn/articles/3b3d6da0/&title=博客页面优化(二) | Lukelqp's Notes&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://lichingpeng.cn/articles/3b3d6da0/&title=博客页面优化(二) | Lukelqp's Notes&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class='qrcode' rel="external nofollow noopener noreferrer noopener" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKElEQVR42u3ay26DQAwF0P7/T6fbSink2oZWzJxZRREhHBaWX19f8Xm9naPvj87P648+v19/8cHAwHgso/r3yR8n1+fU8+sxMDD2YRxFsCqjGi6PHjp/NgwMDIyENAmpR3fAwMDA6DFyQBKm/y3gYmBgPJaRhMjz78/BkxdxcS2OgYHxQEav1Pybz7fMNzAwMB7FeBVPcp/JaLN3MDAw1mbcMcKsDiOrDbjDUhYDA2MDRq/Fny9Y5IlmXqZiYGDswMgDYrU1lo8BekH/lwwXAwNjUUZvPNBLEKtpYlI2l1tvGBgYD2QkqVtveStP7KrB/UOQxcDAWI5x1SMmZeoklSwvWGBgYCzHmBSQvcZZngjmZTAGBsaqjCTxmpeak8A6msFiYGAswegVrgmm14DLB6IYGBh7MvKytrpakYfO6mvCwMDYgXHfYGASIvOEFQMDYzdGXsT2Fr+uQo7cGBgYD2RMbp2H6Wv31woVOQYGxkKM8wZ9Xqzmo835agUGBsaejPnyRJLe5esX5ZYfBgbGNoy8EJ2MPJPksjryxMDAWJuR3ygfPVYXNSbBGgMDY23Gq3jyUUHebpsvs2JgYKzN6M0Ee4OB/FF6rToMDIy1Gb0g2/vtPJUsdA0xMDCWYySBr1ri3pH2fchzMTAwMMYrFNVEsJDDYmBgYFy0kJGPBMqjUwwMjA0Y1UL0qvZZdcxwWbsNAwPjUYxq3tULptW0Lx+FYmBgLM34BioTo4kaaVDQAAAAAElFTkSuQmCC' target="_blank">
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
+        
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://lichingpeng.cn/articles/3b3d6da0/&title=博客页面优化(二) | Lukelqp's Notes&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+      
+      
+          <div class="prev-next">
+              
+                  <section class="prev">
+                      <span class="art-item-left">
+                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+                          <h4>
+                              <a href="/articles/6e81cac4/" rel="prev" title="核电站原理及切尔诺贝利核电站事故的原因">
+                                
+                                    核电站原理及切尔诺贝利核电站事故的原因
+                                
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/%E7%A7%91%E6%99%AE/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 科普</a> <a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 笔记</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/articles/d1176acd/" rel="prev" title="NexT主题v5与v7.2版本比较">
+                                  
+                                      NexT主题v5与v7.2版本比较
+                                  
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/Hexo/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Hexo</a> <a class="tag" href="/tags/NexT/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> NexT</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+          </div>
+      
+    </section>
+  </article>
+
+
+
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-spinner fa-spin fa-fw"></i>
+          </div>
+        </section>
+      
+    </section>
+  </article>
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '博客页面优化(二)',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+      
+        
+          
+          
+            
+              <section class='widget author'>
+  <div class='content pure'>
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">Lukelqp's Notes</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:lichingpeng@163.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/qinpng"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=119318099"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer noopener" href="javascript:void(0)" target="_blank"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#项目主页添加README"><span class="toc-text">项目主页添加README</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加公益404页面"><span class="toc-text">添加公益404页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#同时部署GitHub、coding、gitee上"><span class="toc-text">同时部署GitHub、coding、gitee上</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义域名解析到github和coding"><span class="toc-text">自定义域名解析到github和coding</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#https访问"><span class="toc-text">https访问</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加Google、Baidu收录"><span class="toc-text">添加Google、Baidu收录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#谷歌和百度分析"><span class="toc-text">谷歌和百度分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置SEO优化"><span class="toc-text">设置SEO优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提交站点地图"><span class="toc-text">提交站点地图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本文参考"><span class="toc-text">本文参考</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#推荐阅读"><span class="toc-text">推荐阅读</span></a></li></ol>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget grid'>
+  
+<header class='pure'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content pure'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/archives/" href="/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="archives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/guestbook/" href="/guestbook/"
+          
+            rel="nofollow"
+          
+          
+          id="guestbook">
+          
+            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
+          
+          给我留言
+        </a></li>
+      
+        <li><a class="flat-box" title="/gallery/" href="/gallery/"
+          
+            rel="nofollow"
+          
+          
+          id="gallery">
+          
+            <i class="fas fa-video fa-fw" aria-hidden="true"></i>
+          
+          我的相簿
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于小站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget category'>
+    
+<header class='pure'>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/blog/categories/"
+    title="blog/categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/Hexo/" href="/categories/Hexo/"><div class='name'>Hexo</div><div class='badge'>(6)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E6%97%A5%E5%BF%97/" href="/categories/%E6%97%A5%E5%BF%97/"><div class='name'>日志</div><div class='badge'>(6)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E7%AC%94%E8%AE%B0/" href="/categories/%E7%AC%94%E8%AE%B0/"><div class='name'>笔记</div><div class='badge'>(6)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/%E7%AC%94%E8%AE%B0/%E7%A7%91%E6%99%AE%E7%AC%94%E8%AE%B0/" href="/categories/%E7%AC%94%E8%AE%B0/%E7%A7%91%E6%99%AE%E7%AC%94%E8%AE%B0/"><div class='name'>科普笔记</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" href="/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><div class='name'>读书笔记</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E9%9F%B3%E4%B9%90/" href="/categories/%E9%9F%B3%E4%B9%90/"><div class='name'>音乐</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E9%AD%94%E6%96%B9/" href="/categories/%E9%AD%94%E6%96%B9/"><div class='name'>魔方</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget tagcloud'>
+    
+<header class='pure'>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <a href="/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/tags/NexT/" style="font-size: 19px; color: #777">NexT</a> <a href="/tags/%E6%97%A5%E5%BF%97/" style="font-size: 24px; color: #555">日志</a> <a href="/tags/%E7%A7%91%E6%99%AE/" style="font-size: 19px; color: #777">科普</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 24px; color: #555">笔记</a> <a href="/tags/%E8%AF%BB%E4%B9%A6/" style="font-size: 19px; color: #777">读书</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 14px; color: #999">音乐</a> <a href="/tags/%E9%AD%94%E6%96%B9/" style="font-size: 14px; color: #999">魔方</a>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget list'>
+  
+<header class='pure'>
+  <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
+  
+</header>
+
+  <div class='content pure'>
+    <ul class="entry">
+      
+        <li><a class="flat-box" title="http://ijs.cssn.cn/" href="http://ijs.cssn.cn/"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;日本研究
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://realfavicongenerator.net" href="https://realfavicongenerator.net"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;生成Favicon
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://mxclub.github.io/resume/" href="https://mxclub.github.io/resume/"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;简历主题
+          </div>
+          
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+    <div class="footer">
+      <p>In doing we learn<br>种一颗树最好的时机是十年前，其次是现在</p>
+
+    </div>
+    <br>
+  
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="mailto:lichingpeng@163.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://github.com/qinpng"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=119318099"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  <br>
+  <p>Copyright &copy; 2019-2020 Lukelqp</p>
+  <div>
+    
+      您是小站第
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      位访客
+    
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)' target="_blank" rel="noopener"></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+    
+      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
+    
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var notify = 'true' == true;
+  var verify = 'false' == true;
+  var valine = new Valine();
+  valine.init({
+    el: '#valine_container',
+    notify: notify,
+    verify: verify,
+    guest_info: guest_info,
+    
+    appId: "LqqydY9oSWk6yueqkghRYTQq-gzGzoHsz",
+    appKey: "gm6wv7ngwJM6mtNOdhVoqkNM",
+    placeholder: "快来评论吧~",
+    pageSize:'20',
+    avatar:'mp',
+    lang:'zh-cn',
+    highlight:'true'
+  })
+  </script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
