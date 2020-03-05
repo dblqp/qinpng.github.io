@@ -43,26 +43,6 @@
   </script>
 
   
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144846313-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-144846313-1');
-    </script>
-  
-  
-    <!-- ba -->
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?f64e22e35ee22e2e1ddaaa711b15cf1f";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
   
 <link rel="alternate" href="/atom.xml" title="Lukelqp's Notes" type="application/atom+xml">
 </head>
@@ -316,7 +296,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="/http:/lichingpeng.cn" rel="nofollow">
+      <a href="/https:/qinpng.gitee.io" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -390,7 +370,7 @@
 </blockquote>
 <hr>
 <h3 id="自定义文件custom-styl的变更"><a href="#自定义文件custom-styl的变更" class="headerlink" title="自定义文件custom.styl的变更"></a>自定义文件custom.styl的变更</h3><ul>
-<li><p>要说给我感觉变更最大的应该是<code>custom.styl</code>的变化，在这个文件里可以做很多自定义的网页设置，比如背景图片、字体、主页文章的阴影等，这些设置前面有总结过，参见<a href="https://qinpng.gitee.io/articles/cd40867b/" target="_blank" rel="noopener">博客页面优化(一)</a> 。这个文件之前放在<code>/themes/source/css/_custom/</code>文件夹里，现在已经找不到这个文件夹了，在<strong>主题配置文件</strong>中则多了一些路径设置：</p>
+<li><p>要说给我感觉变更最大的应该是<code>custom.styl</code>的变化，在这个文件里可以做很多自定义的网页设置，比如背景图片、字体、主页文章的阴影等，这些设置前面有总结过，参见<a href="https://qinpng.gitee.io/articles/cd40867b/">博客页面优化(一)</a> 。这个文件之前放在<code>/themes/source/css/_custom/</code>文件夹里，现在已经找不到这个文件夹了，在<strong>主题配置文件</strong>中则多了一些路径设置：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">custom_file_path:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  #head: source&#x2F;_data&#x2F;head.swig</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  #header: source&#x2F;_data&#x2F;header.swig</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  #sidebar: source&#x2F;_data&#x2F;sidebar.swig</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  #postMeta: source&#x2F;_data&#x2F;post-meta.swig</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  #postBodyEnd: source&#x2F;_data&#x2F;post-body-end.swig</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  #footer: source&#x2F;_data&#x2F;footer.swig</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  #bodyEnd: source&#x2F;_data&#x2F;body-end.swig</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  #variable: source&#x2F;_data&#x2F;variables.styl</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">  #mixin: source&#x2F;_data&#x2F;mixins.styl</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  style: source&#x2F;_data&#x2F;styles.styl</span></pre></td></tr></table></figure>
 </li>
 <li><p><code>source/_data/</code> 便成为自定义设置的存放地，这样做很方便，但对于初次踏入V7.0版本的我来说，有点蒙圈。在网上搜罗了好久没答案，后来在<a href="https://github.com/" target="_blank" rel="noopener">同性交友网站</a>上看到提问，才明白，这个路径原来并<strong>不是</strong>主题配置文件里的<code>source</code>路径，而存在于<strong>根目录中</strong>。</p>
@@ -487,15 +467,15 @@
 </li>
 </ul>
 <h3 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h3><ul>
-<li><p><a href="https://qinpng.gitee.io/articles/f9e897e8/" target="_blank" rel="noopener">博客网站搭建过程</a></p>
+<li><p><a href="https://qinpng.gitee.io/articles/f9e897e8/">博客网站搭建过程</a></p>
 </li>
-<li><p><a href="https://qinpng.gitee.io/articles/cd40867b/" target="_blank" rel="noopener">博客页面优化(一)</a> </p>
+<li><p><a href="https://qinpng.gitee.io/articles/cd40867b/">博客页面优化(一)</a> </p>
 </li>
-<li><p><a href="https://qinpng.gitee.io/articles/3b3d6da0/" target="_blank" rel="noopener">博客页面优化(二)</a></p>
+<li><p><a href="https://qinpng.gitee.io/articles/3b3d6da0/">博客页面优化(二)</a></p>
 </li>
-<li><p><a href="https://qinpng.gitee.io/articles/41d4da8c/" target="_blank" rel="noopener">Linux上安装Node.js</a></p>
+<li><p><a href="https://qinpng.gitee.io/articles/41d4da8c/">Linux上安装Node.js</a></p>
 </li>
-<li><p><a href="https://qinpng.gitee.io/articles/a55ea93c/" target="_blank" rel="noopener">关于包管理工具npm下载速度慢的问题</a></p>
+<li><p><a href="https://qinpng.gitee.io/articles/a55ea93c/">关于包管理工具npm下载速度慢的问题</a></p>
 </li>
 </ul>
 
@@ -535,7 +515,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://lichingpeng.cn/articles/d1176acd/&title=NexT主题v5与v7.2版本比较 | Lukelqp's Notes&summary="
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://qinpng.gitee.io/articles/d1176acd/&title=NexT主题v5与v7.2版本比较 | Lukelqp's Notes&summary="
           
           >
           
@@ -547,7 +527,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://lichingpeng.cn/articles/d1176acd/&title=NexT主题v5与v7.2版本比较 | Lukelqp's Notes&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://qinpng.gitee.io/articles/d1176acd/&title=NexT主题v5与v7.2版本比较 | Lukelqp's Notes&summary="
           
           >
           
@@ -557,7 +537,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer noopener" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLUlEQVR42u3aQY7CMAwFUO5/6c4WiWn5dgIS7suqgjbt21h27McjXsfTev7l9frsl7PdXve5fnZpYWBg/CzjuFzXL8hfnO989u/ZDhgYGPdhnL04ub4OvgmvuhsGBgZGkvzlYTcP1hgYGBh7Gb2PyBNBDAwMjF4Rm2yXh93rYvWDtTgGBsYPMnql5neuP9LfwMDA+CnGUVzV1+fh8lhYGBgYsxl5gEuStryFUB3diI7wMDAwhjLyAYukWN1VAJcHxTAwMG7JyBuWybH+ytBGdD8GBsZoxq5hiOqwxfqe/4RsDAyMoYxekL1uGKykm9UhMwwMjDswkoGJ9RGHvBheCb4YGBh3YFQDZZ7wVT89GTJ7k+FiYGAMYlQPuaoDFr1Ur3yQh4GBMZpRDW35dr0jtuR73qSJGBgYoxm9ZkCvWO3t3KybMTAwBjGqATcpZVdCdnU4AwMDYyqjd3DWSw2rzdFCgoiBgXEbxkr6WC078/GOKARjYGCMZiQ3felAf29Zi4GBMY6Rj0Tk1yvBOm8hnM6MYGBgjGbkzcXqEVt+qNdreWJgYNyBsXJ81gvN5f7qdaMUAwNjKOMorl5LsjcitiEpxMDAGMHYEK2Lk1p5oZs8uzT1hoGB8VOM3rBXb1AjaVVWB84wMDDuw1gPfNWmZi/ViwYsMDAwMLaOkW0rUzEwMDCKDcVqurm+GwYGxh0Ye1O69U8sB3EMDIzRjPXD/V4DMh8RywM9BgbGOMYfbCiJh+Xb+isAAAAASUVORK5CYII=' target="_blank">
+        <a class='qrcode' rel="external nofollow noopener noreferrer noopener" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNklEQVR42u3aS26EMBQFUfa/aTJNFEHqXkNHtsujqAXdHAYv73cc+Jzfzu/PyZX339zdGx8ZMmRMyzhvz9UPXF3Jf+Uew59NhgwZ+zBIKOQhOOXdv6z7u2TIkCGDBEHyPTwFlCFDhoynGPeBmIfpfw64MmTImIpBitiRgMvvfb0WlyFDxoSMrn3/mb9fmW/IkCFjKsYZni6M8kB5VkeGDBlrM3iAS5Fdw657HhkyZKzNSEtWHnC7lly6fHaklbEMGTKmZfCWfTeYfKMl9+MTGTJkLM3owh/KN8Milq+dlR1BGTJkTMvobibrX7wBh4Jpui0iQ4aMhRg81euWt4JCNEw3ZciQsRsjbXLxojQtktNAf9k7lCFDxnIMfikpVruBJU83EVuGDBnLMdJmPU8leThORwioIpchQ8YGDB4Q46ZYlWjGvUMZMmQsweCLpHH4G04rgyRVhgwZSzPSMSRJ/kZaZsEcg8dyGTJkTM5Iu3F8vTV9NWmhe/l/Q4YMGcsxRnYVSIstXcLoBg8yZMjYgfFUwteFXRKUUaIpQ4aMDRhpAOX47rE4W4YMGfsw0nAZzEgrEqfKkCFjbcbIACBN+9JXU9bfMmTIWI4xMiVMm3GorR+OH2KYDBkypmWQIDs+pExfxGNdQxkyZCzECKpesOxFRo9d2vdHLS5DhgwZVV7JVyjKPREZMmTIqBI4PnocTx9lyJCxD6Nb2+KBkrN5WilDhox9GF3pyJv7fITwXukrQ4aMaRlfdQ5Lqb7/IBMAAAAASUVORK5CYII=' target="_blank">
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
         
@@ -567,7 +547,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=http://lichingpeng.cn/articles/d1176acd/&title=NexT主题v5与v7.2版本比较 | Lukelqp's Notes&summary="
+          href="http://service.weibo.com/share/share.php?url=https://qinpng.gitee.io/articles/d1176acd/&title=NexT主题v5与v7.2版本比较 | Lukelqp's Notes&summary="
           
           >
           
