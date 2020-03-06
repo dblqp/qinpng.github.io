@@ -2,4 +2,5 @@ README
 
 my blog
 
-site: https://lichingpeng.cn
+Go to new site: https://lichingpeng.cn
+
